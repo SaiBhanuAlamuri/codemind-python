@@ -1,0 +1,6 @@
+x=int(input())
+y=int(input())
+x1=int(input())
+y1=int(input())
+d=float(pow((x1-x)*(x1-x)+(y1-y)*(y1-y),0.5))
+print("%0.4f"%(d))
