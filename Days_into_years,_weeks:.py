@@ -1,0 +1,5 @@
+d=int(input())
+y=int(d/365)
+w=int((d%365)/7)
+print(y)
+print(w)
