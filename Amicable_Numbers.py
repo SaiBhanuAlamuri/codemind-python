@@ -1,15 +1,15 @@
-m=int(input())
 n=int(input())
-ls=[]
-ls1=[]
-for i in range(1,m):
-    if(m%i==0):
-        ls.append(i)
+m=int(input())
+s=0
+s2=0
 for i in range(1,n):
     if(n%i==0):
-        ls1.append(i)
-if(sum(ls)==n and sum(ls1)==m):
+        s=s+i
+for i in range(1,m):
+    if(m%i==0):
+        s2=s2+i
+if(s==m and s2==n):
     print("Amicable")
 else:
     print("Not Amicable")
-    
+        
