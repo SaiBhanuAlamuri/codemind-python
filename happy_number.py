@@ -1,26 +1,26 @@
 import math
-def fun(n):
-    r=0
+def happy(n):
+    f=0
     s=0
+    r=0
     while(1):
         s=0
-        while(n!=0):
+        while(n):
             r=n%10
-            s=s+pow(r,2)
+            s=s+r*r
             n=n//10
-        if(s>9):
+        if s<10:
+            break
+        else:
             n=s
             continue
-        else:
-            break
-    if(s==1 or s==7):
-        res=1
-    else:
-        res=0
-    return res
+    
+            
+    if s==1 or s==7:
+        f=1
+    return f
 n=int(input())
-if(fun(n)==1):
+if(happy(n)==1):
     print("True")
 else:
     print("False")
-            
