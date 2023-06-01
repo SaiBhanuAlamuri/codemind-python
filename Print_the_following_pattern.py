@@ -1,10 +1,5 @@
-a=int(input())
-arr=list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-for i in range(a):
-    for j in range(a-(i+1)):
-        print(" ",end="")
-    for j in range(i+1):
-        print(arr[j],end="")
-    for j in range(i-1,-1,-1):
-        print(arr[j],end="")
+n=int(input())
+for i in range(n):
+    for j in range(i+1,n+1):
+        print(j,end=" ")
     print("")
