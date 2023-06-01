@@ -1,0 +1,10 @@
+n=int(input())
+ar=list(map(int,input().split()))
+mi=ar[0]
+j=1
+while(j<n):
+    if(ar[j]%mi==0):
+        j=j+1
+    else:
+        mi=ar[j]%mi
+print(mi)
