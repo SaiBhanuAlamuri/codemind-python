@@ -1,10 +1,8 @@
 n=int(input())
 for i in range(n):
     for j in range(n):
-        if(i==j):
-            print("x",end="")
-        elif(i+j==n-1):
-            print("x",end="")
+        if i==j or j==0 or j==n-1:
+            print("*",end=" ")
         else:
-            print("0",end="")
-    print()
+            print(" ",end=" ")
+    print("")
